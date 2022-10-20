@@ -52,24 +52,24 @@ const Form = () => {
 
     return (
         <div className={"form"}>
-            <h3>Введите ваши данные</h3>
+            <h3>Введите ваши данные для записи</h3>
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Страна'}
+                placeholder={'Ваше имя'}
                 value={country}
                 onChange={onChangeCountry}
             />
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Улица'}
+                placeholder={'Ваш телефон'}
                 value={street}
                 onChange={onChangeStreet}
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Rj</option>
-                <option value={'legal'}>Юр. лицо</option>
+                <option value={'physical'}>Косметология</option>
+                <option value={'legal'}>Массаж</option>
             </select>
         </div>
     );
