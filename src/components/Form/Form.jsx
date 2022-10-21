@@ -67,10 +67,24 @@ const Form = () => {
                 value={street}
                 onChange={onChangeStreet}
             />
+            {/*<select value={subject} onChange={onChangeSubject} className={'select'}>*/}
+            {/*    <option value={'physical'}>Косметология</option>*/}
+            {/*    <option value={'legal'}>Массаж</option>*/}
+            {/*</select>*/}
+            <h3>Косметология</h3>
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Косметология</option>
-                <option value={'legal'}>Массаж</option>
+                <option value={'physical'}>Пилинг</option>
+                <option value={'legal'}>Чистка</option>
+                <option value={'legal'}>Фракционная мезотерапия</option>
+                <option value={'legal'}>Карбокситерапия</option>
             </select>
+            <h3>Массаж</h3>
+            <select value={subject} onChange={onChangeSubject} className={'select'}>
+                <option value={'physical'}>Классический</option>
+                <option value={'legal'}>Антицеллюлитный</option>
+                <option value={'legal'}>Лимфодренажный</option>
+            </select>
+
         </div>
     );
 };
